@@ -1,7 +1,3 @@
-import streamlit as st
-import pickle
-import nltk
-from preprocessing import clean
 
 import nltk
 
@@ -11,6 +7,10 @@ nltk.download("stopwords")
 nltk.download("wordnet")
 nltk.download("omw-1.4")
 
+import streamlit as st
+import pickle
+import nltk
+from preprocessing import clean
 
 # Load the trained model
 with open("spam_email_model.pkl", "rb") as file:
